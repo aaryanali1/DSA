@@ -40,7 +40,7 @@ public class ArrayList {
         array[size] = value;
         size++;
     }
-    
+
     public void insertAt(int index, int value) {
         if(index < 0) {
             System.out.println("Index cannot be negative.");
