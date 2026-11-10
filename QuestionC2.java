@@ -1,6 +1,8 @@
 public class QuestionC2 {
     private static class Node {
-        String action; Node next;
+        String action; 
+        Node next;
+        
         Node(String a, Node n) {
             action = a; next = n;
         }
@@ -9,11 +11,13 @@ public class QuestionC2 {
     private int front, size;
     private Node redoTop;
     private int redoSize;
+
     public QuestionC2(int cap) {
         buf = new String[cap]; 
         front = 0; 
         size = 0;
-        redoTop = null; redoSize = 0;
+        redoTop = null; 
+        redoSize = 0;
     }
 
     public boolean perform(String action) {
